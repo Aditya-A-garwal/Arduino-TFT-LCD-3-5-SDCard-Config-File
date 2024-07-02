@@ -54,16 +54,38 @@ As soon as the program is uploaded, the display should turn black and the follow
 Next, create a file called `CONFIG.TXT` on a *FAT formatted SD Card*, which will be inserted into the SD Card slot on the TFT LCD Shield. The file must contain three color codes, which will be used to draw three squares on the display. Two examples are shown below -
 
 
-|CONFIG.TXT contents|Result|
-|-|-|
-|
-"square-1-color" = f800"<br>"square-2-color" = "07E0"<br>"square-3-color" = "001F"|![Red, Green and Blue squares drawn](images/config_file_1.jpg)|
-|"square-1-color"  =   "fFe0" // Yellow<br><br>"square-2-color" = "7ff" // Cyan<br>"square-3-color"  = "F81F" // Magenta|![Yellow, Cyan and Magenta squares drawn](images/config_file_2.jpg)|
+### Example 1
 
+Config file -
 
+```
+square-1-color" = f800"
+"square-2-color" = "07E0"
+"square-3-color" = "001F"
+```
 
+Result -
 
-To create your own colors, see [this guide](https://dumblebots.com/2024/05/10/using-3-5-tft-lcd-display-ili9486-arduino-part-1-get-started/).
+![Red, Green and Blue squares drawn](images/config_file_1.jpg)
+
+### Example 2
+
+Config file -
+
+```
+"square-1-color"  =   "fFe0" // Yellow
+
+"square-2-color" = "7ff" // Cyan
+"square-3-color"  = "F81F" // Magenta
+
+```
+
+Result -
+
+![Red, Green and Blue squares drawn](images/config_file_2.jpg)
+
+> [!TIP]
+> To create your own colors, see [this guide](https://dumblebots.com/2024/05/10/using-3-5-tft-lcd-display-ili9486-arduino-part-1-get-started/).
 
 
 ## Troubleshooting
